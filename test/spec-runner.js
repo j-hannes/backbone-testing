@@ -5,7 +5,7 @@ require.config({
     // testing libraries
     mocha: 'components/mocha/mocha',
     chai:  'components/chai/chai',
-    sinon: 'components/sinon/lib/sinon',
+    sinon: 'components/sinonjs/sinon',
   },
 
   shim: {
