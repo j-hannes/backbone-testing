@@ -1,0 +1,39 @@
+{
+  "name": "backbone-testing",
+  "version": "0.0.0",
+  "authors": [
+    "J-Hannes <Hannes_E@gmx.de>"
+  ],
+  "description": "Demonstrate testing infrastructure with backbone.js + require.js + mocha + chai + sinon.js.",
+  "main": "app/index.html",
+  "keywords": [
+    "backbone",
+    "require",
+    "mocha",
+    "chai",
+    "sinon"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/J-Hannes/backbone-testing",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.10",
+    "jquery": "~2.0.3",
+    "backbone": "~1.1.0",
+    "underscore": "~1.5.2",
+    "showdown": "~0.3.1",
+    "backbone.localStorage": "~1.1.7",
+    "bootstrap": "~3.0.3"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.0",
+    "chai": "~1.8.1",
+    "sinon": "~1.7.3"
+  }
+}
