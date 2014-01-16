@@ -18,7 +18,6 @@ define([
 
     describe('sinon.js', function() {
       it('should report spy called', function() {
-        // jshint expr:true
         var hello_spy = sinon.spy(mock, 'hello');
         expect(hello_spy.called).to.be.false;
         mock.hello();
