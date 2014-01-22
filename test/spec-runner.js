@@ -3,18 +3,20 @@ require.config({
     jquery: 'components/jquery/jquery',
     underscore: 'components/underscore/underscore',
     backbone: 'components/backbone/backbone',
+    localStorage: 'components/backbone.localStorage/backbone.localStorage',
 
     // testing libraries
     mocha: 'components/mocha/mocha',
     chai:  'components/chai/chai',
     sinon: 'components/sinonjs/sinon',
 
-    // mvc components
+    // local components
     collections: 'scripts/collections',
     models: 'scripts/models',
     routers: 'scripts/routers',
     templates: 'scripts/templates',
-    views: 'scripts/views'
+    views: 'scripts/views',
+    config: 'scripts/config'
   },
 
   shim: {
@@ -34,7 +36,7 @@ require.config({
 require([
   'jquery',
   'mocha'
-], function($, mocha) {
+], function ($, mocha) {
   'use strict';
 
   mocha.setup({
@@ -45,9 +47,10 @@ require([
   var specs = [];
   specs.push('specs/infrastructure.spec');
   specs.push('specs/models/note-model.spec');
+  specs.push('specs/collections/note-collection.spec');
 
-  $(document).ready(function() {
-    require(specs, function() {
+  $(document).ready(function () {
+    require(specs, function () {
       mocha.run();
     });
   });
